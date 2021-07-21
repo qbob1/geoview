@@ -1,0 +1,34 @@
+<app-saf-container></app-saf-container>
+<div style="display:flex; align-items: center;justify-content: center;">
+<qannabis-map></qannabis-map>
+<div id="feature" class="feature sativa" style="
+display: flex;
+flex-direction: column;
+max-width: 100%;
+">
+    <div>
+        <div style="display:flex;align-items: center; justify-content: center; flex-direction: column;">
+        <div style="display:flex; align-items: center; justify-content: center;">
+            <h1 id="feature--strain-name" class="feature--strain-name">{{ (strain$ | async)?.Name }}</h1>
+        <img style="width:auto;height:5vh;"src="{{styles.Images.sativa}}">
+    </div>
+        <p style="width:100%"> {{ (strain$ | async)?.Description }}</p>
+    </div>
+    <div id="feature--lineage" class="feature--lineage">
+        <app-data-container [data]="(strain$ | async)?.Stats"></app-data-container>
+        <h3>Lineage</h3>
+    <ul style="display: flex; justify-content:space-around; align-items: center;">
+        <li>
+            <card></card>
+        </li>
+        <li>
+            <card></card>
+        </li>
+    </ul>
+</div>
+        
+</div>
+
+</div>
+
+

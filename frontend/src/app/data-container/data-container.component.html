@@ -1,0 +1,3 @@
+<div *ngFor="let item of data | keyvalue">
+    <pbar  [title]="item.key" [percent]="item.value" color="{{styles.Color[item.key]}}"></pbar>
+</div>

@@ -1,0 +1,19 @@
+<div #safcontainer class="saf-container">
+    <input type="text" placeholder="Search...">
+    <ngx-slider value="0" highValue="100" [options]="options" (userChange)="onUserChange($event)"></ngx-slider>
+    <ngx-slider value="0" highValue="100" [options]="options" (userChange)="onUserChange($event)"></ngx-slider>
+    <ngx-slider value="0" highValue="100" [options]="options" (userChange)="onUserChange($event)"></ngx-slider>
+    
+</div>
+<div class="result-container">
+    <card></card>
+    <card></card>
+    <card></card>
+    <card></card>
+    <card></card>
+    <card></card>
+    <card></card>
+</div>
+<div class="saf-toggle">
+    <a (click)="ToggleSafDisplay()">Toggle Saf</a>
+</div>

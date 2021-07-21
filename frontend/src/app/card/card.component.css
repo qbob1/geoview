@@ -1,0 +1,31 @@
+:root{
+    --primary: #555BFF;
+    --secondary: #22D2A0;
+    --background: white;
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+  } 
+.card {
+    background-color: var(--primary);
+    display: block;
+    width: 15vw;
+    min-height: 90px;
+    border: 3px solid #555BFF;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .card p {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 14px;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+  }

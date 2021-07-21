@@ -1,0 +1,10 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom:#e4e4e4 0.1em solid;
+  }
+  #logo {
+    width: 20vh;
+  }
